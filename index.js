@@ -5,7 +5,7 @@ var logger = fs.createWriteStream(logfile, {
   flags: 'a' // 'a' means appending (old data will be preserved)
 })
 
-const checkFrequency = 5;
+const checkFrequency = 60;
 let previousRemaining ;
 
 function logMessage(...messages) {
